@@ -1,0 +1,20 @@
+.h2-f{
+    text-align: center;
+    /* font-family: High Legibility; */
+    letter-spacing: 2.5px;
+    padding: 40px;
+    text-transform: uppercase;
+    background-color: white;
+    text-decoration: bold;
+    font-size: 30px;
+}
+.wwa-p{
+    width: 100%;
+    max-width: 60%;
+    margin: auto ;
+    text-align: left;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    font-family: High Legibility;
+    padding-bottom: 50px;
+}

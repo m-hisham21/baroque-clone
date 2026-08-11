@@ -1,0 +1,39 @@
+#ph2{
+    text-transform: uppercase;
+    padding: 20px 0px 50px 0px;
+    background-color: white;
+    font-family: Futura;
+    letter-spacing: 1.5px
+}
+.pdiv{
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    text-align: left;
+    /* text-align: justify; */
+}
+#csbtn{
+    border-radius:5px;
+    color: white;
+    border: none;
+    padding: 10px 105px 10px 105px; 
+    background-color: rgb(90, 49, 244);
+}
+#csip{
+    border-radius:5px;
+    color: black;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 155px 10px 10px; 
+}
+@media (min-width: 384px) and (max-width: 500px) {
+    #csip{
+    padding: 10px 100px 10px 10px; 
+    margin-left: 10px;
+    }
+}
+#pbtn{
+    background-color: transparent;
+    border: none;
+    margin-left: -40px;
+}

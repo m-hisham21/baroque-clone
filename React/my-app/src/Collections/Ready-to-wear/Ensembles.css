@@ -1,0 +1,42 @@
+.dis-product{
+    position: relative;
+}
+.off-product{
+    position: absolute;
+    color: white;
+    background-color:rgb(237, 120, 120);
+    right: 10px;
+    top: 10px;
+    padding: 2px 10px 2px 10px;
+}
+@media (min-width: 384px) and (max-width: 468px) {
+    .off-product{
+        right: 0px;
+        top: 20px;
+    }
+}
+/* .stitched-products-imgs-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.stitched-products-imgs {
+  width: 100%;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.stitched-products-imgs-wrapper:hover .hover-img {
+  opacity: 1;
+}
+
+.stitched-products-imgs-wrapper:hover .default-img {
+  opacity: 0;
+} */

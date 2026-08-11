@@ -1,0 +1,23 @@
+#cuh1{
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times;
+    padding: 100px 0px 70px 0px;
+}
+.input{
+    padding: 10px 110px 10px 20px;
+    margin: 10px;
+}
+.cubtn{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 250px 10px 250px;
+    border: 1px solid black;
+    border-radius: 0px;
+    letter-spacing: 3px;
+    transition: 1s ease;
+}
+.cubtn:hover{
+    background-color: white;
+    color: black;
+}

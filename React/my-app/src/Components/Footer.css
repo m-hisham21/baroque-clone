@@ -1,0 +1,65 @@
+#footer-bgc {
+    background-color: rgb(43, 43, 43)
+}
+
+h6 {
+    color: white;
+    text-transform: uppercase;
+    font-family: Century Gothic;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer-det {
+    /* border: 2px solid black; */
+    line-height: 30px;
+    padding: 20px 10px 0px 30px;
+    width: 100%;
+    font-size: 10pt;
+    color: white;
+}
+#options{
+    background-color: transparent;
+    color: black;
+    border-color: transparent;
+}
+.footer-det ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-det ul li a {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.footer-det ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.m-f {
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 230px;
+    text-align: left;
+    font-family: Tw Cen MT Condensed,;
+}
+
+@media (max-width: 968px) {
+    .m-f {
+        /* flex-direction: column; */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .m-f {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

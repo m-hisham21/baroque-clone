@@ -1,0 +1,252 @@
+/* BaNnEr ImAgE */
+.banner-div {
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 384px) and (max-width: 600px) {
+  .banner-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+.banner-img {
+  width: 100%;
+  display: block;
+  /* margin-top: -55px; */
+}
+.banner-head-btn {
+  position: absolute;
+  inset: 0;
+  top: 290px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.banner-btns-div {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.banner-btns {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px 10px 30px;
+  width: 100%;
+  max-width: 45%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 1px solid white;
+  transition: 1s ease;
+}
+#bannder-s-btn {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+.banner-btns:hover {
+  background-color: transparent;
+  color: white;
+}
+#bannder-s-btn:hover {
+  background-color: transparent;
+  color: black;
+}
+.btn-small-screen {
+  position: absolute;
+  background-color: rgb(36, 36, 36);
+  border: 1px solid rgb(36, 36, 36);
+  color: white;
+  font-size: 16px;
+  padding: 6px 16px 6px 16px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 1s ease;
+  font-family: Century Gothic;
+  bottom: 50px;
+  margin-left: 250px;
+}
+@media (min-width: 384px) and (max-width: 500px) {
+  .btn-small-screen {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .banner-head-btn {
+    top: 90px;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  .banner-head-btn {
+    top: 130px;
+  }
+}
+@media (min-width: 384px) and (max-width: 500px) {
+  .banner-head-btn {
+    top: 430px;
+  }
+  .banner-btns-div {
+    bottom: 10px;
+    margin: auto -60px;
+    transform: translate(-100px);
+  }
+}
+/* HeAdiNgS */
+.hs {
+  text-transform: uppercase;
+  padding: 20px 0px 20px 0px;
+  font-family: Century Gothic;
+  letter-spacing: 4px;
+  margin-top: 40px;
+}
+.p1imgs {
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: 4s ease;
+}
+.p1imgs:hover {
+  transform: scale(1.22);
+}
+/* EiD LaWn 26 */
+.btns-el {
+  position: absolute;
+  bottom: 30px;
+  left: 35%;
+  background-color: white;
+  color: black;
+  padding: 8px 20px 8px 20px;
+  border: 1px solid black;
+  font-size: 16px;
+  font-family: "Century Gothic", Futura, sans-serif;
+  letter-spacing: 0.2em;
+  padding: 8px 20px 8px 20px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 1s ease;
+}
+.btns-el:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.r2img {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.r2img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 530px) {
+  .row2 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+  .btns-el {
+    font-size: 12px;
+    padding: 7px 14px;
+    bottom: 15px;
+  }
+}
+/* ReAdY To WeAr */
+.img-rtw {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+@media (min-width: 384px) and (max-width: 530px) {
+  .rtw-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+.rtw-btn1 {
+  position: absolute;
+  background-color: rgb(36, 36, 36);
+  border: 1px solid rgb(36, 36, 36);
+  color: white;
+  font-size: 16px;
+  padding: 6px 16px 6px 16px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 1s ease;
+  font-family: Century Gothic;
+  right: 150px;
+  bottom: 20px;
+}
+.rtw-btn1:hover {
+  background-color: transparent;
+  color: rgb(36, 36, 36);
+  border-color: rgb(36, 36, 36);
+}
+#rtw-btn2 {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  border-color: white;
+  font-size: 16px;
+  right: 20px;
+}
+#rtw-btn2:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+.rtw-img,
+.img2 {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+@media (min-width: 384px) and (max-width: 530px) {
+  .img2 {
+    width: 100%;
+    height: 100vh;
+    height: calc(100vh - 350px);
+  }
+}
+#rtw-btn-sa {
+  right: 77%;
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+#rtw-btn-sa:hover {
+  background-color: transparent;
+  color: white;
+}
+#rtwbtnsmr {
+  right: 88%;
+}
+@media (min-width: 468px) and (max-width: 1000px) {
+  #rtw-btn-sa {
+    right: 57%;
+    background-color: white;
+    color: black;
+    border-color: white;
+  }
+  #rtwbtnsmr {
+    right: 78%;
+  }
+  #rtw-btn-sa:hover {
+    background-color: transparent;
+    color: white;
+  }
+}

@@ -1,0 +1,23 @@
+#pph2{
+    text-transform: uppercase;
+    padding: 50px 0px 80px 0px;
+    background-color: white;
+    font-family: Futura;
+    letter-spacing: 1.5px
+}
+.ppdiv{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+    /* text-align: justify; */
+    /* border: 1px solid black; */
+}
+.pph1{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 2;
+    font-size: 18pt;
+    font-family: "Montserrat", sans-serif;
+}

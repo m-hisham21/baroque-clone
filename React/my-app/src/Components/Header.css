@@ -1,0 +1,202 @@
+@media (max-width: 500px) and (min-width: 384px) {
+  #profile {
+    visibility: hidden;
+  }
+  
+}
+/* @media (min-width: 380px) and (max-width: 500px) {
+  .my-offcanvas {
+  max-width: 70% !important;
+}
+} */
+.my-offcanvas {
+  max-width: 350px;
+}
+.nav-icon {
+  padding-top: 7px;
+}
+.main-header {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-color: white;
+  box-shadow: inset 0 -1px 0 0 rgb(227, 226, 226);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s ease;
+}
+#open_menu {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  top: -7px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.icon-btn {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+}
+
+.icon-btn:hover {
+  background-color: transparent;
+  color: black;
+}
+
+/* ======================== Side Menu start =================================== */
+#arrow {
+  background-color: transparent;
+  margin-left: 5px;
+  padding: 3px 5px 3px 3px;
+  border-radius: 5px;
+}
+
+#arrow:hover {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+.main_div {
+  width: 300px;
+  height: auto;
+  /* overflow-y: scroll; */
+}
+
+#S_P {
+  width: 200px;
+  font-size: 16pt;
+  color: red;
+  margin-left: 70px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.summary2 {
+  cursor: pointer;
+  padding-left: 20px;
+  font-size: 14pt;
+  margin: 20px;
+  width: 200px;
+  font-family: Century Gothic;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.summary {
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12pt;
+  width: 250px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: block;
+}
+.summary::before {
+  position: absolute;
+  content: "⬅";
+  left: 230px;
+}
+details[open] .summary::before {
+  transition: transform 0.5s ease;
+  transform: rotate(180deg);
+}
+hr {
+  width: 260px;
+}
+/* ======================== Side Menu end=================================== */
+#mid {
+  top: 0px;
+  left: 45%;
+  padding: 0px;
+  cursor: pointer;
+}
+
+#option {
+  position: absolute;
+  background-color: transparent;
+  right: 200px;
+  top: 6px;
+  padding: 7px 10px 5px 10px;
+  border-color: transparent;
+  border: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+#option:hover {
+  color: rgb(143, 124, 124);
+}
+@media (max-width: 768px) {
+  #option {
+    display: none;
+  }
+}
+#option-menu {
+  background-color: transparent;
+  border: none;
+  letter-spacing: 2px;
+  bottom: 50px;
+  cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .menu-profile{
+    visibility: hidden;
+  }
+}
+.menu-profile {
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 500px) and (max-width: 1250px) {
+  .menu-profile {
+    visibility: hidden;
+  }
+}
+@media (min-width: 384px) and (max-width: 500px) {
+  .menu-profile {
+    visibility: visible;
+  }
+  
+}
+.menu-buttons{
+  background-color: transparent;
+  border: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Gill Sans';
+}
+.cart-check-out-footer{
+  border-top: 1px solid rgb(170, 170, 170);
+  position: fixed;
+  bottom: 50px;
+  margin: auto 20px;
+}
+.cart-check-out-btn{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 12pt;
+  transition: 1s ease;
+}
+.cart-check-out-btn:hover{
+  background-color: white;
+  color: black;
+}
+/* ============= ==================      =======================      =========== */

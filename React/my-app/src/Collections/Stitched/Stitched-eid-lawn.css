@@ -1,0 +1,276 @@
+.stitched-h1 {
+  font-family: Century Gothic;
+  text-transform: uppercase;
+  padding: 80px 0px 50px 0px;
+  letter-spacing: 4px;
+}
+.stitched-EL {
+  margin: 30px 10px 50px 0px;
+  background-color: transparent;
+  border-color: transparent;
+  color: #aba8a8;
+  text-decoration: none;
+}
+.stitched-EL:active {
+  color: black;
+  font-weight: bold;
+}
+.stitched-EL:hover {
+  color: black;
+  text-decoration: underline;
+}
+#stitched-filter {
+  visibility: hidden;
+  font-size: 10pt;
+  letter-spacing: 2px;
+}
+#stitched-nav-dd {
+  background-color: transparent;
+  display: inline-block;
+  border-left: 1px solid rgb(219, 219, 219);
+  padding: 9px 20px 9px 20px;
+  letter-spacing: 2px;
+  font-size: 10pt;
+}
+#stitched-nav-dd .dropdown-toggle {
+  color: rgb(134, 134, 134);
+}
+#stitched-nav-dd:hover .dropdown-toggle {
+  color: black;
+}
+.add-to-cart-popup-btn {
+  position: absolute;
+  bottom: 120px;
+  right: 15px;
+  font-size: 24pt;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+  border: none;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+/* Show button when hovering the image/container */
+.stitched-products-imgs-row:hover .add-to-cart-popup-btn {
+  opacity: 1;
+}
+.add-btn {
+  transition: transform 0.3s ease;
+}
+.add-to-cart-popup-btn:hover .add-btn {
+  transform: rotate(90deg);
+}
+@media (min-width: 500px) and (max-width: 1500px) {
+  .view-btn {
+    display: none;
+  }
+}
+@media (min-width: 384px) and (max-width: 768px) {
+  #stitched-filter {
+    visibility: visible;
+  }
+  #stitched-ten-product {
+    visibility: hidden;
+  }
+  .stitched-sidebar-filter {
+    display: none;
+  }
+  .stitched-products {
+    width: 100%;
+    /* margin: 15px; */
+  }
+}
+@media (min-width: 384px) and (max-width: 500px) {
+  .collection-toolbar__button {
+    display: none;
+  }
+}
+.stitched-pd1 {
+  letter-spacing: 1.5px;
+  line-height: 15px;
+  padding-top: 16px;
+}
+.stitched-pd2 {
+  line-height: 10px;
+  letter-spacing: 1.5px;
+  cursor: text;
+}
+.stitched-pd3 {
+  cursor: text;
+  font-size: 9pt;
+}
+.stitched-containers {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.stitched-height-observer {
+  border-top: 1.5px solid rgb(219, 219, 219);
+  border-bottom: 1.5px solid rgb(219, 219, 219);
+  background-color: white;
+  position: sticky;
+  top: 53px;
+  z-index: 1000;
+}
+.stitched-sortby-filtter-btns {
+  background-color: transparent;
+  border-left: 1px solid rgb(219, 219, 219);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  text-transform: uppercase;
+  color: rgb(132, 132, 132);
+  padding: 15px 30px 15px 30px;
+}
+.stitched-sort-filter-btn {
+  position: absolute;
+  right: 0px;
+  z-index: 1001;
+}
+.stitched-c-l-s {
+  position: absolute;
+  left: 10px;
+  border-right: 1px solid rgb(219, 219, 219);
+}
+.stitched-left-buttons {
+  background-color: transparent;
+  padding: 11px 30px 11px 30px;
+}
+#stitched-ten-product {
+  padding-top: 13px;
+  font-weight: bold;
+}
+.stitched-accordion-button:focus {
+  box-shadow: none; /* Soft gray shadow instead of blue */
+}
+.stitched-accordion-button:not(.collapsed) {
+  background-color: transparent; /* 👈 Change this to whatever background color you want */
+  color: black; /* 👈 Change this to your preferred text color when open */
+}
+.stitched-acrdin-head-p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.stitched-details-products-maindiv {
+  display: flex;
+  margin-top: 50px;
+}
+.stitched-details-products-maindiv {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.stitched-sidebar-filter {
+  width: 100%;
+  max-width: 25%;
+  position: sticky;
+  top: 127px;
+  align-self: flex-start;
+  margin: 20px;
+  background: white;
+  z-index: 2;
+}
+.stitched-all-products {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  width: 100%;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+@media (min-width: 384px) and (max-width: 500px) {
+  .stitched-all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .stitched-products-imgs {
+    margin: 10px;
+  }
+}
+#stitched-left-fix-btns {
+  color: rgb(132, 132, 132);
+  background-color: transparent;
+  padding: 14px 10px 16px 10px;
+  border: none;
+}
+#stitched-left-fix-btns:hover {
+  color: black;
+}
+.stitched-change-img {
+  border: 1px solid black;
+}
+.stitched-products-imgs-row {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+.wishlist-btn-on-img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  font-size: 20pt;
+  padding: 0px 10px;
+  border: none;
+}
+.stitched-row2-imgs,
+.stitched-row5-imgs {
+  position: relative;
+}
+.stitched-products-imgs-row img,
+.all-products img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* fills the box without stretching */
+  display: block;
+}
+.stitched-r2-p-imgs-div {
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  /* object-fit: cover; */
+}
+.stitched-products-imgs {
+  cursor: pointer;
+  width: 100%;
+  padding-right: 0;
+  position: relative;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+/* Img change on hover */
+.hover-img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.stitched-products-imgs-row:hover .hover-img {
+  opacity: 1;
+}
+.stitched-products-imgs-row:hover .default-img {
+  opacity: 0;
+}
+.stitched-add-to-cart-btn {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+  margin-left: 160px;
+  bottom: 130px;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+.stitched-img-box {
+  display: grid;
+}
+.stitched-img-box:hover .add-to-cart-btn {
+  opacity: 1;
+  transform: translateY(0);
+}

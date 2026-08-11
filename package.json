@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "express": "^5.2.1",
+    "mongoose": "^9.8.0",
+    "mongose": "^0.0.2-security",
+    "react-bootstrap": "^2.10.10",
+    "react-image-gallery": "^2.1.2",
+    "swiper": "^12.2.0"
+  },
+  "devDependencies": {
+    "prettier": "3.8.4"
+  }
+}

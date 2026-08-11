@@ -1,0 +1,324 @@
+.baroque {
+  border-bottom: 1px solid rgb(219, 219, 219);
+  padding: 20px;
+}
+.warpper {
+  /* border: 1px dotted black; */
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+}
+.checkout-l-side {
+  /* border: 1px solid black; */
+  width: 50%;
+  height: auto;
+  margin: 50px 50px 10px 120px;
+  padding: 10px;
+  /* flex-grow: 1; */
+}
+.co-h4 {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+#signin a {
+  font-size: 11pt;
+  text-align: right;
+  color: black;
+  padding-right: 20px;
+}
+#email {
+  width: 100%;
+  /* max-width: 90%; */
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  /* margin-top: 10px; */
+}
+#email-info {
+  margin-left: -40px;
+  cursor: pointer;
+}
+.cb-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  gap: 10px;
+  text-align: left;
+  width: 100%;
+  max-width: 90%;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+#checkbox {
+  width: 20px;
+  height: 20px;
+  text-align: left;
+  border-radius: 50px;
+}
+.web-link {
+  text-align: left;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(235, 235, 235);
+  border: 1px solid rgb(200, 200, 200);
+}
+.link-det {
+  margin-top: -15px;
+  margin-left: 30px;
+}
+.headings-h5 {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.delivery-info {
+  position: relative;
+  /* border: 1px solid black; */
+  margin-top: 30px;
+  text-align: left;
+}
+.country-other,
+.country-other-ues-diff {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2px;
+  width: 100%;
+  max-width: 98%;
+}
+#c-r,
+#c-r-ues-diff {
+  color: rgb(150, 150, 150);
+  position: absolute;
+  left: 10px;
+}
+#option-pak,
+#option-pak-ues-diff {
+  /* position: absolute; */
+  width: 99%;
+  margin-top: 19px;
+  border: none;
+}
+#pak {
+  width: 100%;
+  border: none;
+}
+.input-types,
+.input-types-ues-diff {
+  width: 48%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 10px;
+}
+.input-types-full,
+.input-types-full-ues-diff {
+  width: 98%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 10px;
+}
+#selecte-your-city {
+  width: 99%;
+  padding: 10px;
+}
+.shipping-m {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#free {
+  /* padding-top: 8px; */
+  padding-right: 10px;
+}
+.pay-cod {
+  border: 1px solid black;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.pay-online {
+  border: 1px solid black;
+  /* padding: 10px; */
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card-heading {
+  padding: 10px;
+  border: 1px solid black;
+  border-top: none;
+}
+.cccard-info-div {
+  border: 1px solid rgb(180, 180, 180);
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(234, 234, 234);
+}
+.card-info,
+.card-infos {
+  width: 100%;
+  border: 1px solid rgb(180, 180, 180);
+  background-color: rgb(234, 234, 234);
+
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.card-infos {
+  width: 49%;
+}
+#c-r-ues-diff,
+#option-pak-ues-diff,
+.country-other-ues-diff,
+.input-types-ues-diff,
+.input-types-full-ues-diff {
+  background-color: rgb(234, 234, 234);
+  border-top-left-radius: 10px;
+}
+.ued-diff-add-div {
+  background-color: rgb(234, 234, 234);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.ued-diff-add-div {
+  padding: 10px;
+  padding-right: 0px;
+  /* margin-left: -3px; */
+  /* margin-top: 5px; */
+}
+.pay-btn {
+  width: 100%;
+  max-width: 98%;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.polices {
+  background-color: transparent;
+  border: none;
+}
+.checkout-r-side {
+  border-left: 1px solid rgb(209, 209, 209);
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
+  position: sticky;
+  top: 0px;
+}
+.product-info {
+  /* border: 1px solid black; */
+  margin-top: 50px;
+  width: 100%;
+  max-width: 90%;
+  height: 100vh;
+  max-height: 200px;
+  /* overflow-y: scroll; */
+  margin-left: 5%;
+  padding: 0px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+}
+.product-img {
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 10px;
+  width: 50px;
+  height: 60px;
+  padding: 2px;
+  margin: 10px;
+}
+.wrap {
+  margin-top: 15px;
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+}
+#voucher {
+  width: 100%;
+  max-width: 60%;
+  padding: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+}
+.apply-btn {
+  width: 100%;
+  max-width: 15%;
+  padding: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  color: rgb(118, 118, 118);
+  background-color: rgb(238, 238, 238);
+  font-weight: bold;
+  border-radius: 10px;
+}
+.sub-total-detail,
+.shipping-detail {
+  /* border: 1px solid black;  */
+  width: 100%;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.s-t {
+  text-align: left;
+}
+.price {
+  text-align: right;
+}
+.shipping-detail {
+  margin-top: 0px;
+}
+.total {
+  margin-right: 100px;
+}
+
+@media (max-width: 1000px) {
+  .warpper {
+    flex-wrap: wrap;
+  }
+  .checkout-l-side {
+    flex-grow: 1;
+    /* margin: 50px; */
+    margin: auto 100px;
+  }
+  .checkout-r-side {
+    flex-grow: 1;
+    margin: auto 100px;
+    background-color: transparent;
+    border: none;
+  }
+}
+@media (max-width: 768px) {
+  .checkout-l-side {
+    flex-grow: 1;
+    margin: auto 50px;
+  }
+  .checkout-r-side {
+    flex-grow: 1;
+    margin: auto 50px;
+  }
+}
+@media (max-width: 380px) {
+  .checkout-l-side {
+    flex-grow: 1;
+    margin: auto 10px;
+  }
+  .checkout-r-side {
+    flex-grow: 1;
+    margin: auto 10px;
+  }
+}
