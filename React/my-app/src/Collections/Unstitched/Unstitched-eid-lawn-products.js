@@ -3,7 +3,6 @@ import "./Unstitched-eid-lawn-products.css"
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import Offcanvas from "react-bootstrap/Offcanvas";
-// import "./Unstitched-eid-lawn-ptoducts.css"
 function UnstitchedEidLawnProducts() {
   const [showCart, setShowCart] = useState(false);
   const [count, setCount] = useState(1);
@@ -191,7 +190,7 @@ function UnstitchedEidLawnProducts() {
         </div>
       </div>
 
-      {/* <Offcanvas show={showCart} onHide={() => setShowCart(false)} placement="end" style={{ width: "400px" }} >
+      <Offcanvas show={showCart} onHide={() => setShowCart(false)} placement="end" style={{ width: "400px" }} >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title> C A R T </Offcanvas.Title>
           </Offcanvas.Header>
@@ -203,7 +202,7 @@ function UnstitchedEidLawnProducts() {
               <button className="cart-check-out-btn">CheckOut ●</button>
             </div>
           </Offcanvas.Body>
-        </Offcanvas> */}
+        </Offcanvas>
     </div>
   )
 }

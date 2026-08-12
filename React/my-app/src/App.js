@@ -9,7 +9,6 @@ import Profile from "./Components/Profile";
 import Body from "./Collections/Body";
 import Ensembles from "./Collections/Ready-to-wear/Ensembles";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-// import websiteLogo from './B-W-Imgs/download.webp';
 import BodyUnstitchedEidLawn from "./Collections/Unstitched/Body_unstiched_eid_lawn";
 import UnstitchedEidLawn25 from "./Collections/Unstitched/Unstitched-eid-lawn-25";
 import UnstitchedEidLawn26 from "./Collections/Unstitched/Unstitched-eid-lawn-26";
@@ -75,7 +74,7 @@ function AppRoutes() {
           <Route path="/Bottoms" element={<Bottoms />} />
           <Route path="/Velvet" element={<Velvet />} />
           <Route path="/Winter" element={<Winter />} />
-        {/* Footer */}
+        
           <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/our-Responsibility" element={<OurResponsibility />} />
           <Route path="/service_we_provide" element={<ServiceWeProvide />} />
