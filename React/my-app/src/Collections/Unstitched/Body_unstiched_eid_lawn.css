@@ -106,10 +106,14 @@
     max-width: 370px;
     margin: 0;
     padding: 35px 15px 30px;
-    overflow-y: auto;
     transition: right 0.3s ease;
     z-index: 1001;
+    /* These Four Lines AI ⬇ */
     display: block;
+    height: calc(100vh - 55px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
   .sidebar-filter.show-filter {
     right: 0;
