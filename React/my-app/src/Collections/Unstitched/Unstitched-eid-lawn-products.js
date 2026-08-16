@@ -11,8 +11,7 @@ function UnstitchedEidLawnProducts() {
 
   return (
     <div>
-      <br></br>
-      <br></br>
+      <br /><br />
       <div className='full-page-div'>
         <div className='left-imgs'>
           <img className='limgs' src='https://baroque.pk/cdn/shop/files/30_e31446a4-1fe7-4de1-9813-f59376eb2293.jpg?v=1770631276&width=1200' alt='' />
@@ -43,8 +42,7 @@ function UnstitchedEidLawnProducts() {
           <p style={{ color: "#767676", letterSpacing: "2px" }}>EMBROIDERED LAWN EL26-D01 {selectedType.toUpperCase()} </p>
           <p style={{ letterSpacing: "2px" }}><b>PKR {selectedType === "Unstitched" ? "19,950.00" : "26,950.00"}</b></p>
           <p style={{ color: "#707070", fontSize: "10.5pt" }}>ELS26D01-{selectedSize}-333 <b>● LIGHT BLUE ●</b> 3 PIECE</p>
-          <hr></hr>
-          
+          <hr style={{width:"99%"}} /> 
           
           <p>TYPE:</p>
           <button className={`type-size-btns ${selectedType === "Stitched" ? "active" : ""}`}

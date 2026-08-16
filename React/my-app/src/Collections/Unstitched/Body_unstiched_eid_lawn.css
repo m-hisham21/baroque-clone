@@ -38,7 +38,7 @@
 #nav-dd:hover .dropdown-toggle {
   color: black;
 }
-.add-to-cart-popup-btn{
+.add-to-cart-popup-btn {
   position: absolute;
   bottom: 120px;
   right: 15px;
@@ -63,21 +63,81 @@
 .add-to-cart-popup-btn:hover .add-btn {
   transform: rotate(90deg);
 }
-@media (min-width: 384px) and (max-width: 768px) {
+.sidebar-filter {
+  width: 100%;
+  max-width: 25%;
+  position: sticky;
+  top: 127px;
+  align-self: flex-start;
+  margin: 20px;
+  background: white;
+  z-index: 2;
+}
+.filter-backdrop {
+  display: none;
+}
+
+.close-filter {
+  display: none;
+}
+
+@media (max-width: 1000px) {
   #filter {
     visibility: visible;
   }
   #ten-product {
     visibility: hidden;
   }
-  .sidebar-filter {
-    display: none;
-  }
   .products {
     width: 100%;
-    /* margin: 15px; */
+  }
+  #cgv,
+  #lv {
+    display: none;
+  }
+  .details-products-maindiv {
+    display: block;
+  }
+  .sidebar-filter {
+    position: fixed;
+    top: 55px;
+    right: -110%;
+    width: 80%;
+    max-width: 370px;
+    margin: 0;
+    padding: 35px 15px 30px;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1001;
+    display: block;
+  }
+  .sidebar-filter.show-filter {
+    right: 0;
+  }
+  .filter-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+  .filter-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .close-filter {
+    display: block;
+    margin: 10px 10px 0 auto;
+    border: none;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
   }
 }
+
 .pd1 {
   letter-spacing: 1.5px;
   line-height: 15px;
@@ -115,6 +175,9 @@
   color: rgb(132, 132, 132);
   padding: 17px 30px 17px 30px;
 }
+.sortby-filtter-btns:hover{
+  color: black;
+}
 .sort-filter-btn {
   position: absolute;
   right: 0px;
@@ -134,7 +197,7 @@
   font-weight: bold;
 }
 .accordion-button:focus {
-  box-shadow: none; /* Soft gray shadow instead of blue */
+  box-shadow: none;
 }
 .accordion-button:not(.collapsed) {
   background-color: transparent; /* 👈 Change this to whatever background color you want */
@@ -149,16 +212,6 @@
   margin-top: 50px;
   align-items: flex-start;
   gap: 30px;
-}
-.sidebar-filter {
-  width: 100%;
-  max-width: 25%;
-  position: sticky;
-  top: 127px;
-  align-self: flex-start;
-  margin: 20px;
-  background: white;
-  z-index: 2;
 }
 .all-products {
   flex: 1;
@@ -175,7 +228,6 @@
   padding: 14px 10px 16px 10px;
   border: none;
 }
-left-fix-btns
 .left-fix-btns:hover {
   color: black;
 }
@@ -195,10 +247,10 @@ left-fix-btns
   object-fit: cover; /* fills the box without stretching */
   display: block;
 }
+
 @media (min-width: 384px) and (max-width: 500px) {
-  .all-products{
+  .all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  
 }

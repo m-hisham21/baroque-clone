@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
 import "./Body_unstiched_eid_lawn.css";
@@ -6,8 +6,12 @@ import { useNavigate } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 
-function BodyUnstichedEidLawn() {
+function Body_unstiched_eid_lawn() {
   const navigate = useNavigate();
+
+  const [showFilter, setShowFilter] = useState(false);
+  const openFilter = () => setShowFilter(true);
+  const closeFilter = () => setShowFilter(false);
 
   return (
     <div>
@@ -18,8 +22,8 @@ function BodyUnstichedEidLawn() {
       <div className='containers'>
         <div className='height-observer'>
           <div className='sort-filter-btn'>
-            <button id='filter' className='sortby-filtter-btns'> filter </button>
-            {/* ⌵ */}
+            <button id='filter' className='sortby-filtter-btns' onClick={openFilter} aria-label="Open filters"> filter </button>
+
             <Nav id='nav-dd'>
               <NavDropdown title="SORT BY">
                 <NavDropdown.Item href="#action/3.1"> Featured </NavDropdown.Item>
@@ -35,7 +39,6 @@ function BodyUnstichedEidLawn() {
           </div>
           <div className='c-l-s'>
             <collection-layout-switch>
-
               <button style={{ color: "black" }} className='view-btn' type="button" id="stitched-left-fix-btns" title="View" aria-label="Switch to larger product images">
                 <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
                   <path fill="currentColor" d="M0 0h18v18H0z"> </path>
@@ -49,14 +52,14 @@ function BodyUnstichedEidLawn() {
                 </svg>
               </button>
 
-              <button type="button" className='left-fix-btns' value="medium" title="Compact grid view">
+              <button type="button" className='left-fix-btns' value="medium" title="Compact grid view" id='cgv'>
                 <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
                   <path fill="currentColor" d="M0 0h4v4H0zM7 0h4v4H7zM14 0h4v4H14z M0 7h4v4H0zM7 7h4v4H7zM14 7h4v4H14z M0 14h4v4H0zM7 14h4v4H7zM14 14h4v4H14z">
                   </path>
                 </svg>
               </button>
 
-              <button type="button" className='left-fix-btns' value="compact" title="List view">
+              <button type="button" className='left-fix-btns' value="compact" title="List view" id='lv'>
                 <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
                   <path fill="currentColor" d="M0 0h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0z"></path>
                 </svg>
@@ -67,19 +70,13 @@ function BodyUnstichedEidLawn() {
           <p id='ten-product'>10 PRODUCTS</p>
         </div>
         <div className='details-products-maindiv'>
-          <div className='sidebar-filter'>
+          <div className={`filter-backdrop ${showFilter ? 'show' : ''}`} onClick={closeFilter}></div>
+          <div className={`sidebar-filter ${showFilter ? "show-filter" : ""}`}>
+            <button className="close-filter" onClick={closeFilter} aria-label="Close filters"> ✕ </button>
             <Accordion alwaysOpen>
-
               <Accordion.Item style={{ marginLeft: "10px", border: "none", borderBottom: "1px solid rgb(185, 183, 183)" }} eventKey="0">
                 <Accordion.Header > <p className='acrdin-head-p'> Availability </p></Accordion.Header>
                 <Accordion.Body>
-                  {/* <Form>
-                    <Form.Check // prettier-ignore
-                      type="switch"
-                      id="custom-switch"
-                      label="In stock only"
-                    />
-                    </Form> */}
                   <input type='checkbox'></input> <b>In stock only</b>
                 </Accordion.Body>
               </Accordion.Item >
@@ -90,15 +87,6 @@ function BodyUnstichedEidLawn() {
                   <input style={{ width: "100px", marginRight: "20px" }} type='text' placeholder='RS'></input>
                   <b>to</b>
                   <input style={{ width: "100px", marginLeft: "20px" }} type='text' placeholder='RS'></input>
-                  {/* <div style={{ position: "relative", width: "120px", marginRight: "20px", }}>
-  <span style={{ position: "absolute", left: "10px", top: "50%", transform: "translateY(-50%)", fontWeight: "bold", }} >
-    RS
-  </span>
-  <input type="text" style={{ width: "100%", paddingLeft: "35px", paddingRight: "20px", height: "35px", }} />
-  <span style={{ position: "absolute", right: "10px", top: "50%", transform: "translateY(-50%)", color: "#666", }} >
-    0
-  </span>
-</div> */}
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ marginLeft: "10px", border: "none", borderBottom: "1px solid rgb(185, 183, 183)" }} eventKey="2">
@@ -229,10 +217,9 @@ function BodyUnstichedEidLawn() {
         </div>
       </div>
 
-
       {/* EnD */}
     </div>
   )
 }
 
-export default BodyUnstichedEidLawn
+export default Body_unstiched_eid_lawn

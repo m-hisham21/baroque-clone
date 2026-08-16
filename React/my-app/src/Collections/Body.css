@@ -70,11 +70,6 @@
   bottom: 50px;
   margin-left: 250px;
 }
-@media (min-width: 384px) and (max-width: 500px) {
-  .btn-small-screen {
-    display: inline-block;
-  }
-}
 @media (min-width: 768px) and (max-width: 1000px) {
   .banner-head-btn {
     top: 90px;
@@ -86,13 +81,17 @@
   }
 }
 @media (min-width: 384px) and (max-width: 500px) {
-  .banner-head-btn {
-    top: 430px;
+  .btn-small-screen {
+    display: inline-block;
+  }
+  .banner-btns {
+    padding: 8px 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
   }
   .banner-btns-div {
-    bottom: 10px;
-    margin: auto -60px;
-    transform: translate(-100px);
+    gap: 8px;
+    bottom: 20px;
   }
 }
 /* HeAdiNgS */

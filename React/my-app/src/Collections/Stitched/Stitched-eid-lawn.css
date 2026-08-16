@@ -63,7 +63,7 @@
 .add-to-cart-popup-btn:hover .add-btn {
   transform: rotate(90deg);
 }
-@media (min-width: 500px) and (max-width: 1500px) {
+@media (min-width: 769px) and (max-width: 1500px) {
   .view-btn {
     display: none;
   }
@@ -182,7 +182,7 @@
   margin-right: 25px;
   margin-top: 20px;
 }
-@media (min-width: 384px) and (max-width: 500px) {
+@media (max-width: 768px) {
   .stitched-all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

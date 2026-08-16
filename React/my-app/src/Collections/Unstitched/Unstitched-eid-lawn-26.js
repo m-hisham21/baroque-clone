@@ -1,24 +1,30 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
-import "./Unstitched-eid-lawn-26.css";
+import "./Body_unstiched_eid_lawn.css";
 import { useNavigate } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 
-function Unstitched_eid_lawn_26() {
+function Unstiched_eid_lawn_26() {
   const navigate = useNavigate();
+
+  const [showFilter, setShowFilter] = useState(false);
+  const openFilter = () => setShowFilter(true);
+  const closeFilter = () => setShowFilter(false);
+
   return (
     <div>
-      <h1 className='unstitched-26-h1'>Unstiched Eid Lawn</h1>
-      <button className='unstitched-26-EL' onClick={() => navigate("/Unstitched-eid-lawn-25")}>EID LAWN 25</button>
-      <button className='unstitched-26-EL' onClick={() => navigate("/Unstitched-eid-lawn-26")}>EID LAWN 26</button>
+      <h1 className='h1'>Unstitched Eid Lawn</h1>
+      <button className='EL' onClick={() => navigate("/Unstitched-eid-lawn-25")}>EID LAWN 25</button>
+      <button className='EL' onClick={() => navigate("/Unstitched-eid-lawn-26")}>EID LAWN 26</button>
 
-      <div className='unstitched-26-containers'>
-        <div className='unstitched-26-height-observer'>
-          <div className='unstitched-26-sort-filter-btn'>
-            <button className='unstitched-26-sortby-filtter-btns'>filter</button>
-            <Nav id='unstitched-26-nav-dd'>
+      <div className='containers'>
+        <div className='height-observer'>
+          <div className='sort-filter-btn'>
+            <button id='filter' className='sortby-filtter-btns' onClick={openFilter} aria-label="Open filters"> filter </button>
+
+            <Nav id='nav-dd'>
               <NavDropdown title="SORT BY">
                 <NavDropdown.Item href="#action/3.1"> Featured </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2"> Most relevant </NavDropdown.Item>
@@ -31,55 +37,29 @@ function Unstitched_eid_lawn_26() {
               </NavDropdown>
             </Nav>
           </div>
-
-          <div className='unstitched-26-c-l-s'>
-            <collection-layout-switch
-              device="desktop"
-              class="collection-toolbar__layout-switch-list sm-max:hidden"
-              aria-controls="product-list-template--19155083427907__main">
-
+          <div className='c-l-s'>
+            <collection-layout-switch>
               <button style={{ color: "black" }} className='view-btn' type="button" id="stitched-left-fix-btns" title="View" aria-label="Switch to larger product images">
                 <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
                   <path fill="currentColor" d="M0 0h18v18H0z"> </path>
                 </svg>
               </button>
 
-              <button
-                type="button" id="stitched-26-left-fix-btns"
-                title="Grid viwe"
-                aria-label="Switch to larger product images">
-
+              <button type="button" className='left-fix-btns' value="large" title="Grid view" >
                 <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
-                  <path
-                    fill="currentColor"
-                    d="M0 0h8v8H0zM10 0h8v8h-8zM0 10h8v8H0zM10 10h8v8h-8z">
+                  <path fill="currentColor" d="M0 0h8v8H0zM10 0h8v8h-8zM0 10h8v8H0zM10 10h8v8h-8z" >
                   </path>
                 </svg>
               </button>
 
-              <button
-                type="button" id="stitched-26-left-fix-btns"
-                value="medium"
-                title="Compact grid view"
-                class="collection-toolbar__button"
-                aria-label="Switch to smaller product images">
-
+              <button type="button" className='left-fix-btns' value="medium" title="Compact grid view" id='cgv'>
                 <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
-                  <path
-                    fill="currentColor"
-                    d="M0 0h4v4H0zM7 0h4v4H7zM14 0h4v4H14z
-                  M0 7h4v4H0zM7 7h4v4H7zM14 7h4v4H14z
-                  M0 14h4v4H0zM7 14h4v4H7zM14 14h4v4H14z">
+                  <path fill="currentColor" d="M0 0h4v4H0zM7 0h4v4H7zM14 0h4v4H14z M0 7h4v4H0zM7 7h4v4H7zM14 7h4v4H14z M0 14h4v4H0zM7 14h4v4H7zM14 14h4v4H14z">
                   </path>
                 </svg>
               </button>
 
-              <button
-                type="button" id="stitched-26-left-fix-btns"
-                value="compact"
-                title="List view"
-                class="collection-toolbar__button"
-                aria-label="Switch to compact product images">
+              <button type="button" className='left-fix-btns' value="compact" title="List view" id='lv'>
                 <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
                   <path fill="currentColor" d="M0 0h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0z"></path>
                 </svg>
@@ -87,20 +67,21 @@ function Unstitched_eid_lawn_26() {
 
             </collection-layout-switch>
           </div>
-          <p id='unstitched-26-ten-product'>8 PRODUCTS</p>
+          <p id='ten-product'>10 PRODUCTS</p>
         </div>
-        <div className='unstitched-26-details-products-maindiv'>
-          <div className='unstitched-26-sidebar-filter'>
+        <div className='details-products-maindiv'>
+          <div className={`filter-backdrop ${showFilter ? 'show' : ''}`} onClick={closeFilter}></div>
+          <div className={`sidebar-filter ${showFilter ? "show-filter" : ""}`}>
+            <button className="close-filter" onClick={closeFilter} aria-label="Close filters"> ✕ </button>
             <Accordion alwaysOpen>
-
               <Accordion.Item style={{ marginLeft: "10px", border: "none", borderBottom: "1px solid rgb(185, 183, 183)" }} eventKey="0">
-                <Accordion.Header > <p className='unstitched-26-acrdin-head-p'> Availability </p></Accordion.Header>
+                <Accordion.Header > <p className='acrdin-head-p'> Availability </p></Accordion.Header>
                 <Accordion.Body>
                   <input type='checkbox'></input> <b>In stock only</b>
                 </Accordion.Body>
               </Accordion.Item >
               <Accordion.Item style={{ marginLeft: "10px", border: "none", borderBottom: "1px solid rgb(185, 183, 183)" }} eventKey="1">
-                <Accordion.Header > <p className='unstitched-26-acrdin-head-p'> Price </p></Accordion.Header>
+                <Accordion.Header > <p className='acrdin-head-p'> Price </p></Accordion.Header>
                 <Accordion.Body>
                   <input type='range' min={0} max={16950}></input> <br></br>
                   <input style={{ width: "100px", marginRight: "20px" }} type='text' placeholder='RS'></input>
@@ -109,25 +90,25 @@ function Unstitched_eid_lawn_26() {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ marginLeft: "10px", border: "none", borderBottom: "1px solid rgb(185, 183, 183)" }} eventKey="2">
-                <Accordion.Header > <p className='unstitched-26-acrdin-head-p'> Type</p></Accordion.Header>
+                <Accordion.Header > <p className='acrdin-head-p'> Type</p></Accordion.Header>
                 <Accordion.Body>
                   UNSTITCHED (10)
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ marginLeft: "10px", border: "none", borderBottom: "1px solid rgb(185, 183, 183)" }} eventKey="3">
-                <Accordion.Header > <p className='unstitched-26-acrdin-head-p'> Fabric</p></Accordion.Header>
+                <Accordion.Header > <p className='acrdin-head-p'> Fabric</p></Accordion.Header>
                 <Accordion.Body>
                   Lawn(10)
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ marginLeft: "10px", border: "none", borderBottom: "1px solid rgb(185, 183, 183)" }} eventKey="4">
-                <Accordion.Header > <p className='unstitched-26-acrdin-head-p'> Size</p></Accordion.Header>
+                <Accordion.Header > <p className='acrdin-head-p'> Size</p></Accordion.Header>
                 <Accordion.Body>
                   DEFAULT (10)
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ marginLeft: "10px", border: "none", borderBottom: "1px solid rgb(185, 183, 183)" }} eventKey="5">
-                <Accordion.Header > <p className='unstitched-26-acrdin-head-p'> Pices</p></Accordion.Header>
+                <Accordion.Header > <p className='acrdin-head-p'> Pices</p></Accordion.Header>
                 <Accordion.Body>
                   3 PIECE (10)
                 </Accordion.Body>
@@ -135,7 +116,7 @@ function Unstitched_eid_lawn_26() {
             </Accordion>
           </div>
 
-          <div className='unstitched-26-all-products'>
+          <div className='stitched-all-products'>
             <div className='stitched-products-imgs-row'>
               <Link to="/UnstitchedEidLawnProducts">
                 <img className='stitched-products-imgs default-img' src="https://baroque.pk/cdn/shop/files/30_e31446a4-1fe7-4de1-9813-f59376eb2293.jpg?v=1770631276&width=1200" alt="" />
@@ -217,10 +198,9 @@ function Unstitched_eid_lawn_26() {
         </div>
       </div>
 
-
       {/* EnD */}
     </div>
   )
 }
 
-export default Unstitched_eid_lawn_26
+export default Unstiched_eid_lawn_26
