@@ -8,13 +8,9 @@ function Ensembles_cart() {
 
   const [selectedType,] = useState("Stitched");
   const [selectedSize, setSelectedSize] = useState("XS");
-  const [show, setShow] = useState(false);
   const navigate = useNavigate();
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   const [showCart, setShowCart] = useState(false);
+  
   return (
     <div>
       <br></br>

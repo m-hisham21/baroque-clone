@@ -12,26 +12,13 @@ function Header() {
   const [showCart, setShowCart] = useState(false);
   return (
     <>
-      <marquee behavior="" direction="" style={{ backgroundColor: "rgb(36, 36, 36)", padding: "10px 5px 0px 0px", fontSize: "14px", color: "white", fontFamily: "Century Gothic" }} >
-        <p> 
-          <span style={{ paddingLeft: "100px" }}>FOR INTERNATIONAL WEBSITE VISIT WWW.BAROQUE.COM.PK</span>
-          <span style={{ paddingLeft: "100px" }}>Call us at: UAN 111-222-333</span>
-          <span style={{ paddingLeft: "100px" }}>FOR INTERNATIONAL WEBSITE VISIT WWW.BAROQUE.COM.PK</span>
-          <span style={{ paddingLeft: "100px" }}>Call us at: UAN 111-222-333</span>
-          <span style={{ paddingLeft: "100px" }}>FOR INTERNATIONAL WEBSITE VISIT WWW.BAROQUE.COM.PK</span>
-          <span style={{ paddingLeft: "100px" }}>Call us at: UAN 111-222-333</span>
-          <span style={{ paddingLeft: "100px" }}>FOR INTERNATIONAL WEBSITE VISIT WWW.BAROQUE.COM.PK</span>
-          <span style={{ paddingLeft: "100px" }}>Call us at: UAN 111-222-333</span>
-          <span style={{ paddingLeft: "100px" }}>FOR INTERNATIONAL WEBSITE VISIT WWW.BAROQUE.COM.PK</span>
-          <span style={{ paddingLeft: "100px" }}>Call us at: UAN 111-222-333</span>
-          <span style={{ paddingLeft: "100px" }}>FOR INTERNATIONAL WEBSITE VISIT WWW.BAROQUE.COM.PK</span>
-          <span style={{ paddingLeft: "100px" }}>Call us at: UAN 111-222-333</span>
-          <span style={{ paddingLeft: "100px" }}>FOR INTERNATIONAL WEBSITE VISIT WWW.BAROQUE.COM.PK</span>
-          <span style={{ paddingLeft: "100px" }}>Call us at: UAN 111-222-333</span>
-          <span style={{ paddingLeft: "100px" }}>FOR INTERNATIONAL WEBSITE VISIT WWW.BAROQUE.COM.PK</span>
-          <span style={{ paddingLeft: "100px" }}>Call us at: UAN 111-222-333</span>
-        </p>
-      </marquee> 
+      <div className="top-bar">
+  <div className="scroll-text">
+    <span>FOR INTERNATIONAL WEBSITE VISIT WWW.BAROQUE.COM.PK</span>
+    <span>CALL US AT: UAN 111-302-302</span>
+    <span>SALE UPTO 50% OFF IS LIVE NOW. SHOP NOW BEFORE THE STOCK LASTS!</span>
+  </div>
+</div> 
       <header className="main-header">
         <div class="nav-icon" id="open_menu" onClick={handleShow}>
           <svg width="38" height="38" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>

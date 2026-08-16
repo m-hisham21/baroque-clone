@@ -4,11 +4,31 @@
   }
   
 }
-/* @media (min-width: 380px) and (max-width: 500px) {
-  .my-offcanvas {
-  max-width: 70% !important;
+.top-bar {
+  background: #185b1d;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 12px 0;
 }
-} */
+
+.scroll-text {
+  display: inline-flex;
+  gap: 150px;
+  padding-left: 100%;
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .my-offcanvas {
   max-width: 350px;
 }
@@ -52,26 +72,6 @@
 .icon-btn:hover {
   background-color: transparent;
   color: black;
-}
-
-/* ======================== Side Menu start =================================== */
-#arrow {
-  background-color: transparent;
-  margin-left: 5px;
-  padding: 3px 5px 3px 3px;
-  border-radius: 5px;
-}
-
-#arrow:hover {
-  background-color: black;
-  color: white;
-  border-radius: 50%;
-}
-
-.main_div {
-  width: 300px;
-  height: auto;
-  /* overflow-y: scroll; */
 }
 
 #S_P {

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Profile.css"
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 function Profile() {
   const navigate = useNavigate();
   return (
