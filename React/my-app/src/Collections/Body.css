@@ -26,17 +26,17 @@
 }
 .banner-btns-div {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   left: 50%;
-  transform: translate(-50%);
-}
-.banner-btns {
-  display: inline-block;
+  transform: translateX(-50%);
+  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 10px 30px 10px 30px;
+  gap: 15px;
   width: 100%;
-  max-width: 45%;
+}
+
+.banner-btns {
+  padding: 10px 30px;
   text-transform: uppercase;
   letter-spacing: 3px;
   border: 1px solid white;
