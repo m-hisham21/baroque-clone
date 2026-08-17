@@ -28,7 +28,7 @@ function Body() {
         </div>
         <div className="r2img" >
           <Link to="./Stitched-eid-lawn">
-            <img className="p1imgs" src="https://baroque.pk/cdn/shop/files/69_551d6045-38d9-4124-a25b-6eb3e599a8ad.jpg?v=1780746494&width=1000" alt="" />
+            <img className="p1imgs" src="https://baroque.pk/cdn/shop/files/89_369fe03e-b817-4003-bffe-971f08c31ef2.jpg?v=1786018949&width=800" alt="" />
             <button className="btns-el"> Stiched </button>
           </Link>
         </div>

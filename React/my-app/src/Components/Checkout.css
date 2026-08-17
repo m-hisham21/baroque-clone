@@ -3,14 +3,11 @@
   padding: 20px;
 }
 .warpper {
-  /* border: 1px dotted black; */
   width: 100%;
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 10px;
 }
 .checkout-l-side {
-  /* border: 1px solid black; */
   width: 50%;
   height: auto;
   margin: 50px 50px 10px 120px;
@@ -18,7 +15,6 @@
   /* flex-grow: 1; */
 }
 .co-h4 {
-  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   text-align: left;
@@ -31,11 +27,9 @@
 }
 #email {
   width: 100%;
-  /* max-width: 90%; */
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
-  /* margin-top: 10px; */
 }
 #email-info {
   margin-left: -40px;
@@ -50,7 +44,6 @@
   width: 100%;
   max-width: 90%;
   align-items: center;
-  /* border: 1px solid black; */
 }
 #checkbox {
   width: 20px;
@@ -75,7 +68,6 @@
 }
 .delivery-info {
   position: relative;
-  /* border: 1px solid black; */
   margin-top: 30px;
   text-align: left;
 }
@@ -86,7 +78,7 @@
   border-radius: 10px;
   padding: 2px;
   width: 100%;
-  max-width: 98%;
+  max-width: 99%;
 }
 #c-r,
 #c-r-ues-diff {
@@ -164,7 +156,6 @@
   width: 100%;
   border: 1px solid rgb(180, 180, 180);
   background-color: rgb(234, 234, 234);
-
   border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
@@ -214,7 +205,6 @@
   top: 0px;
 }
 .product-info {
-  /* border: 1px solid black; */
   margin-top: 50px;
   width: 100%;
   max-width: 90%;
@@ -237,7 +227,6 @@
 }
 .wrap {
   margin-top: 15px;
-  /* border: 1px solid black; */
   display: flex;
   gap: 2%;
   justify-content: center;
