@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Careers.css"
 function Careers() {
+  
+    useEffect(() => {
+      document.title = "Careers"
+    }, [])
+  
   return (
     <div>
       <h2 id='h2'> Careers</h2>

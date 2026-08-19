@@ -1,7 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Profile.css"
 import { useNavigate } from 'react-router-dom'
 function Profile() {
+
+  useEffect(() => {
+    document.title = "Signin - BAROQUE"
+  }, [])
+
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('login'); // 'login' or 'register'
   const [loading, setLoading] = useState(false);

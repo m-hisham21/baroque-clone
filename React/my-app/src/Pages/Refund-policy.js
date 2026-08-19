@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Refund-policy.css"
 import { Link } from 'react-router-dom'
 function Refund_policy() {
+
+  useEffect(() => {
+    document.title = "Refund Policy"
+  }, [])
+
   return (
     <div>
       <h2 id='rph2'> Refund Policy</h2>

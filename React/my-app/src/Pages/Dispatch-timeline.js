@@ -1,6 +1,10 @@
-import React from 'react'
-import "./Dispatch-timeline.css"
+import React, { useEffect } from 'react'
 function Dispatch_timeline() {
+
+  useEffect(() => {
+    document.title = "Dispatch Timeline"
+  }, [])
+
   return (
     <div>
       <h1 id='dth'> Dispatch-timeline </h1>
@@ -9,9 +13,9 @@ function Dispatch_timeline() {
       <details>
         <summary className='sumry'><b>LOCAL DISPATCH TIME</b></summary>
         <p id='pp'>
-           FOR UNSTITCHED AND READY TO WEAR: WITHIN 1 WEEK
-            FOR STITCHED : WITHIN 3 WEEKS.
-            CUSTOMIZE STITCHING : 1 WEEK EXTRA. 
+          FOR UNSTITCHED AND READY TO WEAR: WITHIN 1 WEEK
+          FOR STITCHED : WITHIN 3 WEEKS.
+          CUSTOMIZE STITCHING : 1 WEEK EXTRA.
         </p>
       </details>
       <hr className='dthr'></hr>
@@ -21,7 +25,7 @@ function Dispatch_timeline() {
       <br></br>
       <br></br>
       <br></br>
-      
+
     </div>
   )
 }

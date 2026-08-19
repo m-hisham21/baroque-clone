@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from 'react'
 import "./Who_we_are.css";
 function Who_we_are() {
+
+  useEffect(() => {
+    document.title = "Who We Are"
+  }, [])
+
   return (
     <div>
       <h2 className="h2-f"> Who We Are</h2>

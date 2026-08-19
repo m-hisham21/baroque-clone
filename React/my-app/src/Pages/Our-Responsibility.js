@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from 'react'
 import "./Our-Responsibility.css";
 function Our_Responsibility() {
+
+  useEffect(() => {
+    document.title = "Our Responsibility"
+  }, [])
+
   return (
     <div>
       <h2 className="orh">Our Responsibility </h2>

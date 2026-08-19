@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
 import "./Stitched-eid-lawn.css";
@@ -12,6 +12,10 @@ function Stiched_eid_lawn() {
   const [showFilter, setShowFilter] = useState(false);
   const openFilter = () => setShowFilter(true);
   const closeFilter = () => setShowFilter(false);
+    
+  useEffect(()=> {
+      document.title = "STITCHED EID LAWN"
+    },[])
 
   return (
     <div>

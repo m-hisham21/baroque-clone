@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Accordion from 'react-bootstrap/Accordion';
 import "../Stitched/Stitched-eid-lawn.css";
 import { useNavigate } from "react-router-dom";
@@ -12,6 +12,10 @@ function Velvet() {
   const openFilter = () => setShowFilter(true);
   const closeFilter = () => setShowFilter(false);
 
+        useEffect(()=> {
+          document.title = "ENSEMBLES"
+        },[])
+    
   return (
     <div>
       <h1 className='stitched-h1'>Ensembles</h1>

@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Privacy-policy.css"
 import { Link } from 'react-router-dom'
 function Privacy_policy() {
+
+    useEffect(() => {
+        document.title = "Privacy Policy"
+    }, [])
+
     return (
         <div>
             <h2 id='pph2'> Privacy Policy</h2>

@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Legal.css"
 import { Link } from 'react-router-dom'
 function Legal() {
+
+  useEffect(() => {
+    document.title = "Legal"
+  }, [])
+
   return (
     <div>
       <h2 id='lh2'>Legal</h2>

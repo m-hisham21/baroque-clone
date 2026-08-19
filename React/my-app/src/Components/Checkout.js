@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import "./Checkout.css"
 import { Link, useNavigate } from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
@@ -7,6 +7,11 @@ import Tooltip from 'react-bootstrap/Tooltip';
 
 function Checkout() {
   const navigate = useNavigate();
+
+        useEffect(()=> {
+          document.title = "Checkout - BAROQUE"
+        },[])
+    
   return (
     <div>
       <div className="baroque">

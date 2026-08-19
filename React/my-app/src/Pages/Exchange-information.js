@@ -1,10 +1,14 @@
-import React from 'react'
-import "./Exchange-information.css"
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 function Exchange_information() {
+
+  useEffect(() => {
+    document.title = "Exchange Information"
+  }, [])
+
   return (
     <div>
-      <h2 id='erh1'>Exchange & Refund</h2> 
+      <h2 id='erh1'>Exchange & Refund</h2>
       <div className='erdiv'>
         <span><b>Exchanges</b></span>
         <p><b><i>Within Pakistan</i></b></p>
@@ -38,7 +42,7 @@ function Exchange_information() {
         </div>
 
       </div>
-      
+
 
 
     </div>
