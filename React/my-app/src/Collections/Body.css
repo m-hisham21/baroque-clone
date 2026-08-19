@@ -212,6 +212,18 @@
   #rtwbtnsmr, #rtw-btn-sa {
     font-size: 12px;
     letter-spacing: 2px;
+    bottom: 20px;
+    padding: 8px 80px;
+  }
+  #rtwbtnsmr {
+    left: 50%;
+    right: auto;
+    transform: translateX(calc(-100% - 5px));
+  }
+  #rtw-btn-sa {
+    left: 50%;
+    right: auto;
+    transform: translateX(5px);
   }
 }
 .rtw-img,
