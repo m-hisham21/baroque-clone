@@ -141,11 +141,13 @@ function Checkout() {
 
           <hr style={{width:"99%"}} />
 
-          <button className='polices' onClick={() => navigate("/policies/refund-policy") }><u>Refund policy</u></button>
+          <div className="info-btns">
+            <button className='polices' onClick={() => navigate("/policies/refund-policy") }><u>Refund policy</u></button>
           <button className='polices' onClick={() => navigate("/policies/shipping-policy") }><u>Shipping</u></button>
           <button className='polices' onClick={() => navigate("/policies/privacy-policy") }><u>Privacy policy</u></button>
           <button className='polices' onClick={() => navigate("/policies/terms-of-service") }><u>Terms of service</u></button>
           <button className='polices' ><u>Contact</u></button>
+          </div>
         </div>
         <div className="checkout-r-side">
           <div className="product-info">
@@ -168,7 +170,6 @@ function Checkout() {
             <p className="price">Free</p>
           </div>
           <div className="">
-            {/* <p className="">Total</p> */}
             <p className=""><b className="total">Total</b><span >PKR</span><span><b>  22,950.00</b></span></p>
             <p>Including Rs <span>3,500.85</span> in taxes</p>
           </div>

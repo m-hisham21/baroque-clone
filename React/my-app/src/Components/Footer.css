@@ -41,9 +41,12 @@ h6 {
     text-decoration: none;
     color: white;
 }
-
+#social-media, #country-options-f, #pg, #ft-img{
+    width: 100%;
+    max-width: 30%;
+    /* border: 1px solid red;   */
+}
 .m-f {
-    /* border: 2px solid black; */
     display: flex;
     gap: 230px;
     text-align: left;
@@ -62,4 +65,17 @@ h6 {
         flex-direction: column;
         gap: 20px;
     }
+    #social-media, #country-options-f, #pg, #ft-img{
+        max-width: 50%;
+        margin: auto 80px;
+        padding: 0px;
+        text-align: center;
+        font-size: 12pt;
+    }
+
+}
+@media (max-width: 400px) {
+  #social-media{
+    margin: auto -10px;
+}
 }

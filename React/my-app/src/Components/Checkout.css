@@ -179,8 +179,6 @@
 .ued-diff-add-div {
   padding: 10px;
   padding-right: 0px;
-  /* margin-left: -3px; */
-  /* margin-top: 5px; */
 }
 .pay-btn {
   width: 100%;
@@ -274,19 +272,23 @@
 .total {
   margin-right: 100px;
 }
-
+.info-btns{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
 @media (max-width: 1000px) {
   .warpper {
     flex-wrap: wrap;
   }
   .checkout-l-side {
     flex-grow: 1;
-    /* margin: 50px; */
     margin: auto 100px;
   }
   .checkout-r-side {
     flex-grow: 1;
     margin: auto 100px;
+    border: 1px solid black;
     background-color: transparent;
     border: none;
   }
@@ -301,13 +303,22 @@
     margin: auto 50px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   .checkout-l-side {
     flex-grow: 1;
-    margin: auto 10px;
+    margin: auto 5px;
   }
   .checkout-r-side {
     flex-grow: 1;
-    margin: auto 10px;
+    margin: auto 5px;
   }
+  .input-types, .card-infos, .input-types-ues-diff{
+    width: 100%;
+    max-width: 98%;
+    /* border: 1px solid black; */
+  }
+  .info-btns{
+  gap: 12px;
+  font-size: 11pt;
+}
 }
