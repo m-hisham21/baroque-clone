@@ -72,7 +72,7 @@ function Ensembles() {
 
             </collection-layout-switch>
           </div>
-          <p id='ten-product'>10 PRODUCTS</p>
+          <p id='ten-product'>47 PRODUCTS</p>
         </div>
         <div className='details-products-maindiv'>
           <div className={`filter-backdrop ${showFilter ? 'show' : ''}`} onClick={closeFilter}></div>

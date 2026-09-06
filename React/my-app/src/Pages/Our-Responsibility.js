@@ -10,12 +10,9 @@ function Our_Responsibility() {
     <div>
       <h2 className="orh">Our Responsibility </h2>
       <h2 className="orh">#WearHappinessThisEid</h2>
-      <video
-        autoPlay
-        controls
-        width={700}
-        src="https://cdn.shopify.com/s/files/1/2277/5269/files/Barouque_Documentary_ver_2_3-Eid_April-2022.mp4?v=1652956426"
-      ></video>
+      <video className="video" autoPlay controls width={700}
+        src="https://cdn.shopify.com/s/files/1/2277/5269/files/Barouque_Documentary_ver_2_3-Eid_April-2022.mp4?v=1652956426">
+      </video>
       <hr className="hr"></hr>
       <p className="paragraph">
         Eid is a celebration of love. What better way than giving back the love
@@ -28,7 +25,7 @@ function Our_Responsibility() {
         raise them!
       </p>
       <hr className="hr"></hr>
-      <video
+      <video className="video"
         autoPlay
         controls
         width={700}
@@ -43,7 +40,7 @@ function Our_Responsibility() {
         looking for.
       </p>
       <hr className="hr"></hr>
-      <video
+      <video className="video"
         autoPlay
         controls
         width={700}

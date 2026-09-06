@@ -1,24 +1,27 @@
+body{
+    margin: 20px;
+}
 #dth{
     text-transform: uppercase;
     padding: 100px 0px 30px 0px;
 }
 .sumry{
-    text-align: center;
+    text-align: left;
     width: 100%;
-    max-width: 700px;
-    margin: auto;
-    /* border: 1px solid black; */
-    padding-right: 300px;
+    max-width: 80%;
+    margin: 10px 0px 10px 50px;
 }
 .dthr{
-    width: 100%;
-    max-width: 700px;
-    margin: auto;
+    width: 90%;
+    margin: 10px auto;
 }
 #pp{
     text-align: center;
     width: 100%;
-    max-width: 700px;
-    margin: auto;
-    padding-bottom: 40px;
+    max-width: 88%;
+    margin: auto 50px;
+    text-align: left;
+}
+.details{
+    margin: 20px 0px ;
 }

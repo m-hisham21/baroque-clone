@@ -1,3 +1,6 @@
+body{
+    margin: 20px;
+}
 #cuh1{
     text-transform: uppercase;
     font-family: Cambria, Cochin, Georgia, Times;
@@ -20,4 +23,16 @@
 .cubtn:hover{
     background-color: white;
     color: black;
+}
+@media (max-width:768px) {
+    .cubtn{
+        width: 100%;
+        max-width: 90%;
+        padding: 10px 0px 10px 0px;
+    }
+    .textarea, .input{
+        width: 100%;
+        max-width: 90%;
+    }
+    
 }
