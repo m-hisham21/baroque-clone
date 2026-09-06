@@ -49,9 +49,31 @@ function ScrollToTop() {
   return null;
 }
 
+const footerPages = [
+  "/who-we-are",
+  "/our-Responsibility",
+  "/service_we_provide",
+  "/Careers",
+  "/Our-store",
+  "/Contact-us",
+  "/Dispatch-timeline",
+  "/Exchange-information",
+  "/policies/privacy-policy",
+  "/policies/refund-policy",
+  "/policies/shipping-policy",
+  "/policies/terms-of-service",
+  "/policies/legal",
+];
+
 function AppRoutes() {
   const location = useLocation();
   const hideHeaderFooter = ["/Checkout", "/profile"].includes(location.pathname);
+
+  useEffect(() => {
+    document.body.classList.toggle("footer-page", footerPages.includes(location.pathname));
+
+    return () => document.body.classList.remove("footer-page");
+  }, [location.pathname]);
 
   return (
     <div className="App">
