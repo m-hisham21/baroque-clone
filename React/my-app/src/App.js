@@ -78,8 +78,9 @@ function AppRoutes() {
   return (
     <div className="App">
       {!hideHeaderFooter && <Header />}
-      <ScrollToTop />
-      <Routes>
+      <main className="footer-page-content">
+        <ScrollToTop />
+        <Routes>
           <Route path="/" element={<Body />} />
           <Route path="/Body" element={<Body />} />
           <Route path="/Ensembles" element={<Ensembles />} />
@@ -111,8 +112,9 @@ function AppRoutes() {
           <Route path="/policies/terms-of-service" element={<TermsOfService />} />
           <Route path="/policies/legal" element={<Legal />} />
           <Route path="/profile" element={<Profile />} />
-        <Route path="/Checkout" element={<Checkout/>} />
-      </Routes>
+          <Route path="/Checkout" element={<Checkout />} />
+        </Routes>
+      </main>
       {!hideHeaderFooter && <Footer />}
     </div>
   );

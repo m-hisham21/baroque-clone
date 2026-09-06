@@ -14,7 +14,11 @@ body {
 }
 
 body.footer-page {
-  margin: 0px 0px 0px 15px;
+  margin: 0;
+}
+
+body.footer-page .footer-page-content {
+  margin-left: 15px;
 }
 
 code {
