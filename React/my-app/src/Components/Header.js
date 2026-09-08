@@ -83,9 +83,10 @@ function Header() {
         </Link>
 
       </header>
-
+{/* side menu */}
       <Offcanvas className="my-offcanvas" show={show} onHide={handleClose} placement="start">
         <Offcanvas.Header closeButton>
+        <button className="dashboard-btn" onClick={ ()=> navigate ("../Dashboard")}>DashBoard</button>
         </Offcanvas.Header>
         <hr style={{ width: "90%", margin: "auto" }} />
         <Offcanvas.Body>

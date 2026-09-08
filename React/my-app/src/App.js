@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 // Header
 import Profile from "./Components/Profile";
+import Dashboard from "./Dashboard/DashboardLayout";
 
 // Body
 import Body from "./Collections/Body";
@@ -67,7 +68,9 @@ const footerPages = [
 
 function AppRoutes() {
   const location = useLocation();
-  const hideHeaderFooter = ["/Checkout", "/profile"].includes(location.pathname);
+  const hideHeaderFooter =
+    ["/Checkout", "/profile"].includes(location.pathname) ||
+    location.pathname.startsWith("/Dashboard");
 
   useEffect(() => {
     document.body.classList.toggle("footer-page", footerPages.includes(location.pathname));
@@ -113,6 +116,7 @@ function AppRoutes() {
           <Route path="/policies/legal" element={<Legal />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/Checkout" element={<Checkout />} />
+          <Route path="/Dashboard/*" element={<Dashboard />} />
         </Routes>
       </main>
       {!hideHeaderFooter && <Footer />}
