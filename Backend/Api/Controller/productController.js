@@ -1,11 +1,13 @@
 const productModel = require('../Models/productModels');
+const activityModel = require('../Models/activityModel');
 
 module.exports = {
 
     // POST
     createData: function (req, res) {
         productModel.create(req.body)
-            .then(() => {
+            .then((product) => {
+                activityModel.log('PRODUCT_ADDED', `New product added: ${product.Name}`, { productId: product._id })
                 res.send("Your data is saved into database")
             })
             .catch(err => {
@@ -16,6 +18,7 @@ module.exports = {
     // GET all products
     getProducts: function (req, res) {
         productModel.find()
+            .sort({ createdAt: -1 })
             .then(results => {
                 res.send(results)
             }).catch(err => {
@@ -37,6 +40,9 @@ module.exports = {
     updateProduct: function (req, res) {
         productModel.findByIdAndUpdate(req.params.id, req.body, { new: true })
             .then(result => {
+                if (result) {
+                    activityModel.log('PRODUCT_UPDATED', `Product updated: ${result.Name}`, { productId: result._id })
+                }
                 res.send("Your data is updated successfully")
             })
             .catch(err => {
@@ -48,6 +54,9 @@ module.exports = {
     deleteProduct: function (req, res) {
         productModel.findByIdAndDelete(req.params.id)
             .then(result => {
+                if (result) {
+                    activityModel.log('PRODUCT_DELETED', `Product deleted: ${result.Name}`, { productId: result._id })
+                }
                 res.send("Your product deleted successfully")
             })
             .catch(err => {

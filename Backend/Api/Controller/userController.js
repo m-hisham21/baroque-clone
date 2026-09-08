@@ -1,4 +1,5 @@
 const userModel = require('../Models/userModel');
+const activityModel = require('../Models/activityModel');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
@@ -15,7 +16,8 @@ module.exports = {
 
     register: function (req, res) {
         userModel.create(req.body)
-            .then(() => {
+            .then((user) => {
+                activityModel.log('USER_REGISTERED', `New user registered: ${user.name}`, { userId: user._id })
                 res.send("Your data is saved into database")
             })
             .catch(err => {
@@ -60,6 +62,46 @@ module.exports = {
                     message: "Something went wrong",
                     error: err.message
                 })
+            })
+    },
+
+    // GET all users (used by the admin dashboard Users section)
+    getUsers: function (req, res) {
+        userModel.find()
+            .select('-password -otp -otpExpires')
+            .sort({ createdAt: -1 })
+            .then(results => {
+                res.send(results)
+            })
+            .catch(err => {
+                res.status(500).send("Oops! Something went wrong: " + err)
+            })
+    },
+
+    // GET one user
+    getSingleUser: function (req, res) {
+        userModel.findById(req.params.id)
+            .select('-password -otp -otpExpires')
+            .then(result => {
+                res.send(result)
+            })
+            .catch(err => {
+                res.status(500).send("Oops! Something went wrong: " + err)
+            })
+    },
+
+    // PUT - e.g. toggle Active/Inactive from the dashboard
+    updateUser: function (req, res) {
+        const updates = { ...req.body };
+        delete updates.password; // never allow plain-text password overwrite from this route
+
+        userModel.findByIdAndUpdate(req.params.id, updates, { new: true })
+            .select('-password -otp -otpExpires')
+            .then(result => {
+                res.send(result)
+            })
+            .catch(err => {
+                res.status(500).send("Oops! Something went wrong: " + err)
             })
     },
 

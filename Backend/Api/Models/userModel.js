@@ -14,11 +14,16 @@ var userSchema = new mongoose.Schema({
 
     otpExpires: {
         type: Date
-    }
+    },
+
+    status: { type: String, enum: ['Active', 'Inactive'], default: 'Active' },
+}, {
+    timestamps: true // adds createdAt, needed for registration trends
 })
 
 // Hash password before saving
 userSchema.pre('save', async function () {
+    if (!this.isModified('password')) return
     this.password = await bcrypt.hash(this.password, saltround)
 })
 

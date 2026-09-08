@@ -21,6 +21,14 @@ app.use('/api/categories', categoryRoute)
 var userRoute = require('./Routes/userRoutes')
 app.use('/api/user', userRoute)
 
+// Orders
+var orderRoute = require('./Routes/orderRoutes')
+app.use('/api/orders', orderRoute)
+
+// Admin Dashboard
+var dashboardRoute = require('./Routes/dashboardRoute')
+app.use('/api/dashboard', dashboardRoute)
+
 // Secret Key
     app.set("secretKey", "i am good..??-683289487423092358 djsdjhfjdsncxnxcklWEJDN MJZSHDJandszx vnisfrjwekd")
 
